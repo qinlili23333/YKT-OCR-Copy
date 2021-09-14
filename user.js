@@ -20,7 +20,7 @@
     console.log(Tesseract);
     var picList
     function getList(){
-        picList=document.querySelectorAll(".pptimg");
+        picList=document.querySelectorAll(".pptimg:not(.problembullet)");
         if(!picList.length){setTimeout(getList,1000)}else{
             SakiProgress.showDiv();
             recognize();
